@@ -1,0 +1,85 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    /* display: grid;
+    grid-template-areas: 
+    "h"
+    "m"
+    "s"
+    "f"; */
+}
+
+header,
+.title {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    /* grid-area: h; */
+    justify-content: space-between;
+    padding: 0.36em 1em;
+}
+
+header i {
+    font-size: 1.3rem;
+}
+
+header h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 0.84rem;
+    margin-left: 0.3em;
+}
+
+header a {
+    text-decoration: none;
+    color: #090909;
+    margin-left: 1em;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+
+main {
+    /* grid-area: m; */
+    /* border: solid 1px tomato; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 293px;
+    /* width: 100%; */
+    background-image: url("images/article-image-hero.png");
+    background-size: cover;
+    color: white;
+}
+
+.articleDate {
+    font-size: 0.75rem;
+    /* font-size: 1rem; */
+    margin: 0 1.667em 0.667em 1.667em;
+
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0 0.6em;
+    line-height: 1;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin: 0.5em 1.25em 1.56em 1.25em;
+}
+
+section {
+    /* grid-area: s; */
+}
+
+footer {
+    /* grid-area: f; */
+}
