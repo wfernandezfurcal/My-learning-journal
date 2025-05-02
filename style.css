@@ -10,6 +10,8 @@ body {
     "f"; */
 }
 
+/* header */
+
 header,
 .title {
     display: flex;
@@ -17,9 +19,8 @@ header,
 }
 
 header {
-    /* grid-area: h; */
     justify-content: space-between;
-    padding: 0.36em 1em;
+    padding: 0.66em 1em;
 }
 
 header i {
@@ -43,43 +44,67 @@ a:hover {
     cursor: pointer;
 }
 
+/* main */
 
 main {
-    /* grid-area: m; */
-    /* border: solid 1px tomato; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     min-height: 293px;
-    /* width: 100%; */
     background-image: url("images/article-image-hero.png");
     background-size: cover;
     color: white;
 }
 
-.articleDate {
+main .articleDate {
     font-size: 0.75rem;
-    /* font-size: 1rem; */
-    margin: 0 1.667em 0.667em 1.667em;
-
 }
 
-h1 {
+main h1 {
     font-size: 2rem;
     margin: 0 0.6em;
     line-height: 1;
 }
 
-p {
+main p {
     font-size: 1rem;
     line-height: 1.2;
     margin: 0.5em 1.25em 1.56em 1.25em;
 }
 
+/* Section */
+
 section {
-    /* grid-area: s; */
+    display: grid;
+    gap: 2.56em;
+    grid-template-columns: repeat(auto-fit, 374px);
+    grid-auto-rows: 368px;
+    justify-content: center;
+    margin-top: 2.125em;
 }
 
+article img {
+    object-fit: cover;
+    width: 100%;
+    height: 232px;
+}
+
+.articleDate {
+    font-size: 0.875rem;
+    margin: 0.571em 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0.5em 0;
+}
+
+
 footer {
-    /* grid-area: f; */
+
 }
