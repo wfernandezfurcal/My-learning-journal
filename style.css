@@ -2,12 +2,6 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     margin: 0;
-    /* display: grid;
-    grid-template-areas: 
-    "h"
-    "m"
-    "s"
-    "f"; */
 }
 
 /* header */
@@ -46,30 +40,34 @@ a:hover {
 
 /* main */
 
-main {
+.mainArticle {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     min-height: 293px;
     background-image: url("images/article-image-hero.png");
     background-size: cover;
+    background-position: center;
     color: white;
 }
 
-main .articleDate {
+.mainArticle .articleDate {
     font-size: 0.75rem;
+    margin-left: 1.667em;
 }
 
-main h1 {
+.mainArticle h1 {
     font-size: 2rem;
     margin: 0 0.6em;
     line-height: 1;
+    text-shadow: 1px 1px 2px black;
 }
 
-main p {
+.mainArticle p {
     font-size: 1rem;
     line-height: 1.2;
     margin: 0.5em 1.25em 1.56em 1.25em;
+    text-shadow: 1px 1px 2px black;
 }
 
 /* Section */
@@ -104,7 +102,46 @@ p {
     margin: 0.5em 0;
 }
 
+button {
+    display: block;
+    font-family: inherit;
+    color: black;
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: inherit;
+    border: none;
+    margin: 1.69em auto 2.94em auto;
+}
+
+button:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+button:active {
+    cursor: pointer;
+    color: black;
+}
 
 footer {
+    height: 6.05em;
+    text-align: center;
+    padding-top: 2.31em;
+    background-color: #202020;
+    color: #ECECEC;
+    font-weight: bold;
+}
 
+span {
+    display: block;
+    color: #D7D7D7;
+    font-weight: lighter;
+}
+
+
+@media (width > 1300px) {
+    .mainArticle{
+        min-height: 488px;
+    }
 }
