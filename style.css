@@ -70,15 +70,21 @@ a:hover {
     text-shadow: 1px 1px 2px black;
 }
 
+.mainArticle div:hover{
+  text-decoration: underline 0.5px;
+  cursor: pointer;
+}
+
 /* Section */
 
 section {
     display: grid;
     gap: 2.56em;
+    max-width: 1300px;
     grid-template-columns: repeat(auto-fit, 374px);
-    grid-auto-rows: 368px;
+    grid-auto-rows: 400px;
     justify-content: center;
-    margin-top: 2.125em;
+    margin: 2.125em auto 0 auto;
 }
 
 article img {
@@ -95,6 +101,15 @@ article img {
 h1 {
     font-size: 1.5rem;
     margin: 0;
+}
+
+h1:hover{
+    text-decoration: underline 0.5px;
+    cursor: pointer;
+}
+
+h1:active{
+    text-decoration: none;
 }
 
 p {
@@ -123,6 +138,8 @@ button:active {
     cursor: pointer;
     color: black;
 }
+
+/* footer */
 
 footer {
     height: 6.05em;
